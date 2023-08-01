@@ -1,0 +1,43 @@
+body {
+    background-image: url('https://www.dlsu.edu.ph/wp-content/uploads/2019/10/DLSU300.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-wrapper{
+    display: grid;
+    
+}
+
+.main-wrapper header-wrap{
+    
+}
+
+.main-wrapper footer-wrap{
+
+}
+
+.main-wrapper right-column-wrap{
+    
+}
+
+.btn{
+    border: #34632C;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+#branding-header {
+    background-color: #34632C;
+    color: #fff;
+    align-items: center;
+    opacity: 85%;
+    width: 100vw;
+}
+
+#nav-header{
+    background-color: #CAE0BF;
+    opacity: 75%;
+    width: 100vw;
+}

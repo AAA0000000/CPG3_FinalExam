@@ -1,0 +1,86 @@
+:root {
+    --h1: 36px;
+}
+
+body {
+    background-image: url('https://www.dlsu.edu.ph/wp-content/uploads/2019/10/DLSU300.jpg');
+    background-repeat: no-repeat;
+    background-size: 130vmax;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas:
+        'header header  header  header'
+        'main   main    main      menu'
+        'footer footer  footer  footer';
+}
+
+.header-wrap {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+}
+
+.footer-wrap {
+    grid-area: footer;
+    background-color: #34632C;
+    color: #fff;
+    opacity: 85%;
+    width: 100vw;
+    height: 10vh;
+}
+
+.main-body {
+    grid-area: main;
+    min-height: 90vh;
+    background-color: #fff;
+
+    padding: 30px 30px 30px 30px;
+}
+
+.main-body h1,
+.main-body h2 {
+    color:#34632C;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 60%;
+}
+
+.main-body h1{
+    font-size: var(--h1);
+}
+
+.main-body h2 {
+    font-size: calc(var(--h1) / 2);
+}
+
+.right-column-wrap {
+    grid-area: menu;
+    background-color: #34632C;
+    color: #fff;
+    opacity: 85%;
+}
+
+.btn {
+    border: #34632C;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+#branding-header {
+    background-color: #34632C;
+    color: #fff;
+    align-items: center;
+    opacity: 85%;
+    width: 100vw;
+}
+
+#nav-header {
+    background-color: #CAE0BF;
+    opacity: 75%;
+    width: 100vw;
+}
