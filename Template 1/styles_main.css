@@ -94,11 +94,26 @@ body {
     padding: 10px;
 }
 
+.cmap_table {
+    width: 100%;
+}
+
+.cmap_table th{
+    border: 1px solid lightgrey;
+    padding: 5px;
+}
+
+.cmap_table tr td{
+    border: 1px solid lightgrey;
+    padding: 5px;
+}
+
 .peo_container_ext{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    width: 100%;
 }
 
 .peo_container{
@@ -106,6 +121,7 @@ body {
     align-items: top;
     margin: auto;
     padding: 10px;
+    width: 100%;
 }
 
 .peo_container img{
@@ -121,6 +137,10 @@ body {
     align-items: center;
     border-collapse: collapse;
     padding: 10px;
+}
+
+.peo_table{
+  width: 100%;
 }
 
 .green_h_sep_line{
@@ -151,6 +171,15 @@ body {
     width: 50%;
 }
 
+.img_layout_double_row{
+    display: flex;
+}
+
+.img_layout_double_column{
+    flex: 50%;
+    padding: 5px;
+}
+
 #branding-header {
     background-color: #34632C;
     color: #fff;
@@ -163,4 +192,41 @@ body {
     background-color: #CAE0BF;
     opacity: 75%;
     width: 100vw;
+}
+
+#UGP_btn1,#UGP_btn4{
+    background-color: lightgray;
+}
+
+#UGP_btn2,#UGP_btn3{
+    background: rgb(244, 244, 244)!important;
+}
+
+#cmap_btn1,#cmap_btn4{
+    background-color: lightgray;
+}
+
+#cmap_btn2,#cmap_btn3{
+    background: rgb(244, 244, 244)!important;
+}
+
+.grad_study table, td{
+    border: 1px solid lightgrey;
+    padding: 5px;
+}
+
+.grad_study table{
+    width: 100%;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

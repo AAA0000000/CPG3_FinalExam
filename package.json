@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jquery-csv": "^1.0.21",
     "vite": "^4.2.1"
   }
 }
