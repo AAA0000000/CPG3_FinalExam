@@ -1,0 +1,135 @@
+<!-- BRANDING HEADER -->
+<header class="d-flex justify-content-between border-bottom-5" id="branding-header">
+  <div class="d-flex flex-row py-3 px-5 gap-2">
+    <img class="rounded-circle" src="https://www.dlsu.edu.ph/wp-content/uploads/2019/06/logo-dlsu-id-manual-2019.jpg"
+      alt="DLSU - Manila" width="64" height="64">
+    <img src="https://www.dlsu.edu.ph/wp-content/uploads/2022/03/gcoe-400x400.png" alt="GCOE" width="64" height="64">
+    <span
+      style="display: flex; width: 45vw; align-items: center; color: white; font-weight: bold; line-height: 0.95em;">
+      De La Salle University </br>
+      Department of Electronics and Computer Engineering
+    </span>
+  </div>
+  <div class="d-flex flow-row py-3 px-5 gap-2">
+    <!-- TODO: Implement the clock -->
+    <span id="clock" onload="currentTime()">
+      Clock
+    </span>
+    <span>
+      Menu
+    </span>
+  </div>
+</header>
+
+<!-- NAVIGATION HEADER -->
+<header class="py-2 border-bottom" id="nav-header">
+  <div>
+    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 gap-1">
+        <li>
+          <!-- Home Dropdown -->
+          <div class="dropdown">
+            <script src="body.js"></script>
+            <button class="btn btn-outline-success btn-secondary dropdown-toggle" type="button" id="HomeMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</button>
+            <ul class="dropdown-menu" aria-labelledby="HomeMenuButton">
+              <li><a class="dropdown-item" onclick="newbody(0)">Vision</a></li>
+              <li><a class="dropdown-item" onclick="newbody(1)">Mission</a></li>
+              <li><a class=" dropdown-item" onclick="newbody(2)">Program History</a></li>
+              <li><a class="dropdown-item" onclick="newbody(3)">Expected Lasallian Graduate Attribute (ELGA)</a></li>
+              <li><a class="dropdown-item" onclick="newbody(4)">Program Educational Objectives</a></li>
+              <li><a class="dropdown-item" onclick="newbody(5)">Student Outcomes</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Degree Programs Dropdown -->
+        <li>
+          <div class="dropdown">
+            <script src="body.js"></script>
+            <button class="btn btn-outline-success btn-secondary dropdown-toggle" type="button" id="DegreeMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Degree Programs</button>
+            <ul class="dropdown-menu" aria-labelledby="DegreeeMenuButton">
+              <li><a class="dropdown-item" onclick="newbody(10)">Undergraduate Programs</a></li>
+              <li><a class="dropdown-item" onclick="newbody(11)">Graduate Programs</a></li>
+              <li><a class=" dropdown-item" onclick="newbody(12)">Other Options and Specializations</a></li>
+              <li><a class="dropdown-item" onclick="newbody(13)">Curriculum Map</a></li>
+              <li><a class="dropdown-item" onclick="newbody(14)">Enrollment and Graduation Statistics</a></li>
+              <li><a class="dropdown-item" onclick="newbody(15)">Recognitions, Accreditations, and Assessments</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Faculty Dropdown -->
+        <li>
+          <div class="dropdown">
+            <script src="body.js"></script>
+            <button class="btn btn-outline-success btn-secondary dropdown-toggle" type="button" id="FacultyMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty</button>
+            <ul class="dropdown-menu" aria-labelledby="FacultyMenuButton">
+              <li><a class="dropdown-item" onclick="newbody(20)">Department Organizational Structure</a></li>
+              <li><a class="dropdown-item" onclick="newbody(21)">Faculty Profile</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Campus Life Dropdown -->
+        <li>
+          <div class="dropdown">
+            <script src="body.js"></script>
+            <button class="btn btn-outline-success btn-secondary dropdown-toggle" type="button" id="LifeMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Campus Life</button>
+            <ul class="dropdown-menu" aria-labelledby="LifeMenuButton">
+              <li><a class="dropdown-item" onclick="newbody(30)">Laboratories and Facilities</a></li>
+              <li><a class="dropdown-item" onclick="newbody(31)">Community Engagement and Linkages</a></li>
+              <li><a class="dropdown-item" onclick="newbody(32)">Student Organization</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Achievements Dropdown -->
+        <li>
+          <div class="dropdown">
+            <script src="body.js"></script>
+            <button class="btn btn-outline-success btn-secondary dropdown-toggle" type="button" id="AchMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Achievements</button>
+            <ul class="dropdown-menu" aria-labelledby="AchMenuButton">
+              <li><a class="dropdown-item" onclick="newbody(40)">Awards and Achievements</a></li>
+              <li><a class="dropdown-item" onclick="newbody(41)">Conferences</a></li>
+              <li><a class="dropdown-item" onclick="newbody(42)">Licensure Examinations</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Archives Dropdown -->
+        <li>
+          <div class="dropdown">
+            <script src="body.js"></script>
+            <button class="btn btn-outline-success btn-secondary dropdown-toggle" type="button" id="ArchMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</button>
+            <ul class="dropdown-menu" aria-labelledby="ArchMenuButton">
+              <li><a class="dropdown-item" onclick="newbody(50)">Research and Publications</a></li>
+              <li><a class="dropdown-item" onclick="newbody(51)">Thesis Archives</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Other Dropdown -->
+        <li>
+          <div class="dropdown">
+            <script src="body.js"></script>
+            <button class="btn btn-outline-success btn-secondary dropdown-toggle" type="button" id="OtherMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archives</button>
+            <ul class="dropdown-menu" aria-labelledby="OtherMenuButton">
+              <li><a class="dropdown-item" onclick="newbody(60)">Continuing Professional Development</a></li>
+              <li><a class="dropdown-item" onclick="newbody(61)">Alumni and Board of Advisers</a></li>
+              <li><a class="dropdown-item" onclick="newbody(62)">Downloadable Forms and Policies</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><button class="btn btn-outline-success" type="submit">Search</button></li>
+      </ul>
+
+    </div>
+  </div>
+</header>

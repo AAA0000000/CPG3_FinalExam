@@ -1,31 +1,154 @@
+:root {
+    --h1: 36px;
+}
+
 body {
     background-image: url('https://www.dlsu.edu.ph/wp-content/uploads/2019/10/DLSU300.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 130vmax;
+    min-width: fit-content;
+    min-height: fit-content;
 }
 
-.main-wrapper{
+.main-wrapper {
     display: grid;
-    
+    grid-template-areas:
+        'header header  header  header'
+        'main   main    main      menu'
+        'footer footer  footer  footer';
 }
 
-.main-wrapper header-wrap{
-    
+.header-wrap {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
 }
 
-.main-wrapper footer-wrap{
-
+.footer-wrap {
+    grid-area: footer;
+    background-color: #34632C;
+    color: #fff;
+    opacity: 85%;
+    width: 100vw;
+    height: 10vh;
 }
 
-.main-wrapper right-column-wrap{
-    
+.main-body {
+    grid-area: main;
+    min-height: 90vh;
+    background-color: #fff;
+
+    padding: 30px 30px 30px 30px;
 }
 
-.btn{
+.main-body h1,
+.main-body h2,
+.main-body h3{
+    color:#34632C;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.main-body h1{
+    font-size: var(--h1);
+}
+
+.main-body h2 {
+    font-size: calc(var(--h1) / 2);
+}
+
+.main-body h3 {
+    font-size: calc(var(--h1) / 2.5);
+}
+
+.right-column-wrap {
+    grid-area: menu;
+    background-color: #34632C;
+    color: #fff;
+    opacity: 85%;
+}
+
+.btn {
     border: #34632C;
     background-color: #fff;
     text-align: center;
     padding: 5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.elga_table tr td{
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.so_table tr td{
+    border: 1px solid lightgrey;
+}
+
+.so_table td{
+    min-width: 170px;
+    padding: 10px;
+}
+
+.peo_container_ext{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.peo_container{
+    display: flex;
+    align-items: top;
+    margin: auto;
+    padding: 10px;
+}
+
+.peo_container img{
+    float: left;
+    width: 18%;
+    height: 18%;
+    margin-right: 30px;
+}
+
+.peo_container tr{
+    display: flex;
+    border: 1px solid lightgrey;
+    align-items: center;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.green_h_sep_line{
+    margin: auto;
+    border: 2px solid #34632C;
+    background-color: #34632C;
+    width: auto;
+}
+
+.transparent_h_sep_line{
+    margin: auto;
+    width: auto;
+    padding: 10px;
+}
+
+.gray_h_sep_line{
+    margin: auto;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    width: auto;
+}
+
+.img_layout_single_center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 50%;
 }
 
 #branding-header {
@@ -36,7 +159,7 @@ body {
     width: 100vw;
 }
 
-#nav-header{
+#nav-header {
     background-color: #CAE0BF;
     opacity: 75%;
     width: 100vw;
