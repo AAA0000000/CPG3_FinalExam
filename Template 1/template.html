@@ -26,26 +26,36 @@
     </div>
     <!-- END OF HEADER -->
     <!-- START OF BODY & MENU -->
-    <div class="main-wrapper right-column-wrap">
+    <div class="main-wrapper right-column-wrap" id="naviPanel">
       Side Bar
-      <br> 
-      <br> 
-
     </div>
     <div class="main-body" id="body-placeholder">
     </div>
     <!-- END OF BODY & MENU -->
     <!-- START OF FOOTER -->
-    <div class="main-wrapper footer-wrap">
-      Footer
+    <div class="main-wrapper footer-wrap" id="footer-location">
+      <div id="future-here">
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <h1>The Future Begins Here.</h1>
+        <hr>
+        <h2>Connect with us:</h2>
+        <div class="d-flex gap-3 align-items-center justify-content-center" id="socMedButtons">
+          <a style="color: #3b5998;" href="#!" role="button"><i class="fa fa-facebook-official"></i></a>
+          <a style="color: #55acee;" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+          <a style="color: #dd4b39;" href="#!" role="button"><i class="fa fa-google"></i></a>
+          <a style="color: #ac2bac;" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
     <!-- END OF FOOTER -->
   </div>
   <script>
     $(
       function () {
+        startTime();
         $("#nav-placeholder").load("navbar.html"); // Permanent Load
-        $("#body-placeholder").load("DegreePrograms/dp_cmap_ece.html"); // Default load
+        $("#body-placeholder").load("Home/body_elga.html", naviPanelLoad()); // Default load
       }
     );
   </script>

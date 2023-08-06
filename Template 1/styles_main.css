@@ -16,6 +16,8 @@ body {
         'header header  header  header'
         'main   main    main      menu'
         'footer footer  footer  footer';
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto minmax(7.5vi, max-content);
 }
 
 .header-wrap {
@@ -29,8 +31,10 @@ body {
     background-color: #34632C;
     color: #fff;
     opacity: 85%;
-    width: 100vw;
-    height: 10vh;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-body {
@@ -229,4 +233,54 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#footer-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-location h1,
+#footer-location h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0px;
+    text-align: center;
+}
+
+#footer-location h1 {
+    font-size: 18px;
+}
+
+#footer-location h2 {
+    font-size: 12px;
+}
+
+#naviPanel {
+    padding: 15px;
+    text-align: left;
+}
+
+#naviPanel h1 {
+    font-size: 18px;
+}
+
+#naviPanel h2 {
+    font-size: 10px;
+}
+
+#naviPanel a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.table-of-contents {
+    position: sticky;
+    top: 15px;
+}
+
+
+#socMedButtons
+{
+    font-size: 2vi;
 }
